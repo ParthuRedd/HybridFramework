@@ -74,12 +74,11 @@ public class AddToCart extends BaseClass{
 
 	}
 	@Then("verify name and surname is displayed correct")
-	public void verify_name_and_surname_is_displayed_correct() throws InterruptedException {
+	public void verify_name_and_surname_is_displayed_correct()  {
 		
 		
 		String title = LanPage.getTitle();
 		System.out.print(title);
-		Thread.sleep(5000);
 		Assert.assertEquals("Your Account Has Been Created!",title);
 		if(LanPage.getUserName().contains(userName)) {
 			Assert.assertTrue(true);
