@@ -43,7 +43,7 @@ public class AddToCart extends BaseClass{
 
 	}
 	
-	@And("^create account by entering emil address personal details$")
+	@Then("^create account by entering emil address personal details$")
 	public void create_account_by_entering_emil_address_personal_details(DataTable table) {
 		RegisterPage=new RegisterPage(driver);
 		RegisterPage.clickContinue();
